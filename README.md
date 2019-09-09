@@ -5,7 +5,7 @@
 
 The aim of this project is to use a polyglot persistence which, in this case, stores JSON documents in MongoDB, while querying the relationships between the data, using Neo4j graph database. This procedure can be achieved by using the Neo4j Doc Manager for Mongo Connector. In fact, it is a tool that empowers MongoDB developers to migrate documents from MongoDB to a Neo4j property graph structure. Specifically, while Neo4j Doc Manager is running in background, the STIX 2.0 documents that are stored in MongoDB, are imported to a graph concurrently.
 
-Neo4j Doc Manager is based upon Mongo Connector, which requires creating a MongoDB replica set. An OplogThread thread then will listen to all CUD operations (Create, Update, Read) occurring in MongoDB. The mongo-connector provides an interface to collect the events caught by the OplogThread. The communication interface is implemented into a structure called DocManager, which can properly receive and handle Mongo documents and information about the database and its collections.
+Neo4j Doc Manager is based upon Mongo Connector, which requires creating a MongoDB replica set. An OplogThread thread then will listen to all CRUD operations (Create,Read,Update,Delete) occurring in MongoDB. The mongo-connector provides an interface to collect the events caught by the OplogThread. The communication interface is implemented into a structure called DocManager, which can properly receive and handle Mongo documents and information about the database and its collections.
 
 
 
