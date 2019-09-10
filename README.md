@@ -14,7 +14,7 @@ Neo4j Doc Manager is based upon Mongo Connector, which requires creating a Mongo
 
 
 ~~~
-git clone
+git clone https://github.com/st3faniaalt1ni/STIX2ToNeo4jDocManager.git
 ~~~
 
 First, install the project dependencies:
@@ -24,22 +24,8 @@ pip install -r requirements.txt
 
 
 
+# MongoDB configuration:
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-MongoDB configuration:
 A mongodb running instance is required. 
 
 Ensure that mongo is running a *replica set*. To initiate a replica set start mongo with:
@@ -51,7 +37,7 @@ Then open mongo shell on port 27018 and run:
 rs.initiate()
 ~~~
 
-For Neo4j docker Image:
+# For Neo4j docker Image:
 
 Make sure that you have Docker and Docker-Compose installed.
 Then run with sudo privileges:
