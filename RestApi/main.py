@@ -17,7 +17,7 @@ def add_document():
 		id = mongo.db.threats.insert(_json)
 	    # id = mongo.db.collection_name.insert(_json)
 
-		resp = jsonify('STIX Object Document added successfully!')
+		resp = jsonify('STIX  Document added successfully!')
 		resp.status_code = 200
 		return resp
 	else:
@@ -81,7 +81,7 @@ def update_document(id):
 									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type"},
 									 }
                                         })
-		resp = jsonify('Document object  updated successfully!')
+		resp = jsonify('STIX object  updated successfully!')
 		resp.status_code = 200
 		return resp
 	else:
@@ -99,7 +99,7 @@ def update_document(id):
 def delete_documents(id):
 	mongo.db.threats.delete_one({'_id': ObjectId(id)})
 	#mongo.db.collection_name.delete_one({'_id': ObjectId(id)})
-	resp = jsonify('User deleted successfully!')
+	resp = jsonify('STIX Document deleted successfully!')
 	resp.status_code = 200
 	return resp
 		
