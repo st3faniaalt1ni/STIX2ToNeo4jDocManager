@@ -69,7 +69,17 @@ def update_document(id):
 									   'aliases': _json["aliases"] if "aliases" in _json else "aliases",
                                        'sophistication': _json["sophistication"] if "sophistication" in _json else "sophistication",
                                        'pattern': _json["pattern"] if "pattern" in _json else "pattern",
-									   'roles': _json["roles"] if "roles" in _json else "roles"}
+									   'roles': _json["roles"] if "roles" in _json else "roles",
+									   'labels': _json["labels"] if "labels" in _json else "labels",
+									   'external_references': _json["external_references"] if "external_references" in _json else "external_references",
+									   'source_name': _json["source_name"] if "source_name" in _json else "source_name",
+									   'url': _json["url"] if "url" in _json else "url",
+									   'external_id': _json["external_id"] if "external_id" in _json else "external_id",
+									   'kill_chain_phases': _json["kill_chain_phases"] if "kill_chain_phases" in _json else "kill_chain_phases",
+									   'kill_chain_name': _json["kill_chain_name"] if "kill_chain_name" in _json else "kill_chain_name",
+									   'phase_name': _json["phase_name"] if "phase_name" in _json else "phase_name",
+									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type"},
+									 }
                                         })
 		resp = jsonify('Document object  updated successfully!')
 		resp.status_code = 200
