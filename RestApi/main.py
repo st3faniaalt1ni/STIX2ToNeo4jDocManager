@@ -67,8 +67,8 @@ def update_document(id):
 									   'resource_level': _json["resource_level"] if "resource_level" in _json else "No resource level",
 									   'primary_motivation': _json["primary_motivation"] if "primary_motivation" in _json else "primary_motivation",
 									   'aliases': _json["aliases"] if "aliases" in _json else "aliases",
-                                       'sophistication': _json["sophistication"] if "sophistication" in _json else "sophistication",
-                                       'pattern': _json["pattern"] if "pattern" in _json else "pattern",
+                                                                           'sophistication': _json["sophistication"] if "sophistication" in _json else "sophistication",
+                                                                           'pattern': _json["pattern"] if "pattern" in _json else "pattern",
 									   'roles': _json["roles"] if "roles" in _json else "roles",
 									   'labels': _json["labels"] if "labels" in _json else "labels",
 									   'external_references': _json["external_references"] if "external_references" in _json else "external_references",
@@ -78,9 +78,9 @@ def update_document(id):
 									   'kill_chain_phases': _json["kill_chain_phases"] if "kill_chain_phases" in _json else "kill_chain_phases",
 									   'kill_chain_name': _json["kill_chain_name"] if "kill_chain_name" in _json else "kill_chain_name",
 									   'phase_name': _json["phase_name"] if "phase_name" in _json else "phase_name",
-									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type"},
+									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type",
 									 }
-                                        })
+                                                                     })
 		resp = jsonify('STIX object  updated successfully!')
 		resp.status_code = 200
 		return resp
