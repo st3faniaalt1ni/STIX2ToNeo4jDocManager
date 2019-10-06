@@ -81,7 +81,7 @@ def update_document(id):
 									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type",
 									 }
                                                                      })
-		resp = jsonify('STIX object  updated successfully!')
+		resp = jsonify('STIX Document updated successfully!')
 		resp.status_code = 200
 		return resp
 	else:
