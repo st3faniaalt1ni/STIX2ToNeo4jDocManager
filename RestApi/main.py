@@ -58,7 +58,7 @@ def update_document(id):
 									 { '$set':
 									 { 'type': _json["type"] if "type" in _json else "No type",
 									   'id': _json["type"] if "id" in _json else "No id",
-								       'created': _json["created"] if "created" in _json else "No creation date",
+								           'created': _json["created"] if "created" in _json else "No creation date",
 									   'modified': _json["type"] if "modified" in _json else "No modifications",
 									   'object_marking_refs': _json["object_marking_refs"] if "id" in _json else "No marking definitions",
 									   'name': _json["name"] if "name" in _json else "No name",
