@@ -78,8 +78,8 @@ def update_document(id):
 									   'kill_chain_phases': _json["kill_chain_phases"] if "kill_chain_phases" in _json else "kill_chain_phases",
 									   'kill_chain_name': _json["kill_chain_name"] if "kill_chain_name" in _json else "kill_chain_name",
 									   'phase_name': _json["phase_name"] if "phase_name" in _json else "phase_name",
-									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type",
-									 }
+									   'relationship_type': _json["relationship_type"] if "relationship_type" in _json else "relationship_type"},
+									 
                                                                      })
 		resp = jsonify('STIX Document updated successfully!')
 		resp.status_code = 200
